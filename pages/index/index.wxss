@@ -1,0 +1,146 @@
+/**index.wxss**/
+/* header */
+.header {
+  position: relative;
+}
+.header-input {
+  border: 1px solid #D9EED1;
+  margin: 22rpx 36rpx 14rpx 36rpx;
+  padding: 0 36rpx;
+  text-align: center;
+  line-height: 72rpx;
+  font-size: 26rpx;
+}
+.header-input-placeholder {
+  color: rgba(133, 133, 133, 0.60);
+}
+.header-input-icon-search {
+  position: absolute;
+  top: 8rpx;
+  left: 50%;
+  margin-left: -195rpx;
+}
+/* nav */
+.nav {
+  display: flex;
+  line-height: 112rpx;
+  margin-bottom: 6rpx;
+}
+.nav-item {
+  flex: 1;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #2B333B;
+  position: relative;
+}
+.nav-img {
+  position: relative;
+  top: 6rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+.nav-item-active {
+  position: absolute;
+  width: 32rpx;
+  height: 8rpx;
+  left: 85rpx;
+  top: 85rpx;
+  background-color: #f01414;
+  border-radius: 4rpx;
+}
+/* swiper */
+.swiper {
+  height: 232rpx;
+}
+.swiper-item {
+  box-sizing: border-box;
+  padding: 0 6rpx;
+}
+.swiper-img {
+  width: 702rpx;
+  height: 232rpx;
+  border-radius: 12rpx;
+}
+/* project */
+.project {
+  margin-top: 32rpx;
+  margin-left: 40rpx;
+}
+.project-tag {
+  line-height: 32rpx;
+  font-size: 28rpx;
+  color: #2B333B;
+  font-weight: bold;
+}
+.project-item {
+  margin-top: 16rpx;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.project-item-img {
+  width: 208rpx;
+  height: 136rpx;
+  border-radius: 20rpx;
+}
+.project-item-content {
+  flex: 1;
+  margin-left: 24rpx;
+  border-bottom: 1rpx solid #D9DDE1;
+}
+.project-item-content view {
+  margin: 4rpx 18rpx 12rpx 0;
+  float: left;
+}
+.project-item-title {
+  display: block;
+  font-size: 32rpx;
+  line-height: 42rpx;
+  color: #2B333B;
+  font-weight: bold;
+}
+.project-item-price {
+  font-size: 24rpx;
+}
+.project-item-price-active {
+  font-size: 24rpx;
+  color:#F01414;
+}
+.project-item-notice {
+  font-size: 24rpx;
+  color: #F01414;
+  font-weight: bold;
+  background-color: #F0DDDD;
+  border-radius: 7rpx;
+  padding: 0 2rpx;
+}
+.project-item-grade {
+  font-size: 24rpx;
+}
+.project-item-user {
+  display: inline-block;
+}
+.project-item-user {
+  position: relative;
+}
+.user-img {
+  position: absolute;
+  top: -5rpx;
+  width: 40rpx;
+  height: 40rpx;
+}
+.user-num {
+  position: absolute;
+  top: -2rpx;
+  left: 35rpx;
+  font-size: 24rpx;
+}
+/* activity */
+.activity-img {
+  display: block;
+  width: 702rpx;
+  height: 232rpx;
+  margin: 0 auto 32rpx auto;
+  border-radius: 12rpx;
+}

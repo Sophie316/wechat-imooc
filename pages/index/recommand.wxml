@@ -1,0 +1,31 @@
+<!-- recommand -->
+<block wx:if="{{typeT === 'recommand'}}">
+  <!-- swiper -->
+  <swiper class="swiper" indicator-dots="true" autoplay="true" circular="true" previous-margin="21rpx" next-margin="21rpx">
+    <swiper-item class="swiper-item" wx:for="{{swiperList}}" wx:key="*this">
+      <image src="{{item.imgURL}}" alt="swiper-1" class="swiper-img"></image>
+    </swiper-item>
+  </swiper>
+  <!-- project -->
+  <view class="project">
+    <navigator url="/pages/hot/hot">
+      <text class="project-tag">实战推荐</text>
+    </navigator>
+    <view class="project-item" wx:for="{{courses}}" wx:key="index" 
+    data-id="{{item.id}}" bindtap="handleCoursesTap">
+      <image class="project-item-img" src="{{item.imgURL}}" alt="project-1"></image>
+      <view class="project-item-content">
+        <view class="project-item-title">
+          {{item.title}}</view>
+        <view class="project-item-price" wx:if="{{!item.promotion}}">￥{{item.price}}</view>
+        <view class="project-item-price-active" wx:if="{{item.promotion}}">￥{{item.price}}</view>
+        <view class="project-item-notice" wx:if="{{item.notice}}">{{item.notice}}</view>
+        <view class="project-item-grade">{{item.level}}</view>
+        <view class="project-item-user">
+          <image class="user-img" src="../../resources/people-active.png"></image>
+          <text class="user-num">{{item.num}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>

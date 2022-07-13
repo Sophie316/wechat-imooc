@@ -1,0 +1,2 @@
+<view>this is detail.wxml</view>
+<view>id is{{id}}</view>

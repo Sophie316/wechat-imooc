@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<!-- header -->
+<view class="header">
+  <input type="text" class="header-input" placeholder="Angular.js*MySQL*Java" placeholder-class="header-input-placeholder" bindinput="handleInputChange" />
+  <icon type="search" class="header-input-icon-search" size="20" wx:if="{{showIcon}}"></icon>
+</view>
+<!-- nav -->
+<view class="nav">
+  <view class="nav-item" data-t="{{item.type}}" bindtap="changeType" wx:for="{{nav}}" wx:key="type">
+    <image src="../../resources/nav.png" alt="nav" class="nav-img" />
+    {{item.title}}
+    <view hidden="{{typeT !== item.type}}" class="nav-item-active nav-item-active-{{item.type}}"></view>
+  </view>
+</view>
+
+<!-- recommand -->
+<include src="./recommand"/>
+
+<!-- activity -->
+<include src="./activity"/>

@@ -1,0 +1,87 @@
+/* tabs */
+.tabs {
+  display: flex;
+  padding: 0 120rpx;
+  height: 88rpx;
+  box-shadow: 0 2rpx 4rpx 0 rgba(0, 0, 0, 0.10);
+}
+.tab {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  font-size: 36rpx;
+  color: #71777D;
+  font-weight: bold;
+}
+.tabs .active {
+  color: #2B333B;
+}
+.active-bar {
+  width: 36rpx;
+  height: 4rpx;
+  background-color: #F01414;
+  border-radius: 4rpx;
+  position: absolute;
+  left: 113rpx;
+  top: 60rpx;
+}
+/* time */
+.time {
+  margin: 40rpx auto;
+  width: 240rpx;
+  height: 64rpx;
+  display: flex;
+  border: 1rpx solid #71777D;
+  border-radius: 8rpx;
+  font-size: 28rpx;
+}
+.period {
+  flex: 1;
+  text-align: center;
+  margin: 3rpx;
+  line-height: 58rpx;
+  background-color: #fff;
+  border-radius: 8rpx;
+}
+.time .active {
+  background-color: #71777D;
+  color: #fff;
+}
+/* list */
+.list {
+  margin-top: 24rpx;
+}
+.list-item {
+  display: flex;
+  margin: 0 48rpx 40rpx 48rpx;
+  align-items: center;
+}
+.list-img {
+  width: 180rpx;
+  height: 120rpx;
+  border-radius: 20rpx;
+}
+.list-title {
+  margin-left: 24rpx;
+  font-size: 28rpx;
+  color: #2B333B;
+  line-height: 40rpx;
+  flex: 1;
+}
+.list-rank {
+  width: 120rpx;
+  height: 120rpx;
+  position: relative;
+}
+.rank-img {
+  width: 120rpx;
+  height: 120rpx;
+}
+.rank-num {
+  position: absolute;
+  top: 50%;
+  margin-top: -35rpx;
+  left: 50%;
+  margin-left: -12rpx;
+  font-weight: bold;
+}
